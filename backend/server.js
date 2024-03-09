@@ -19,7 +19,7 @@ mongoose
     console.log(error.message);
     process.exit(1);
   });
-// app.listen(PORT, () => {
-//   console.log(`Server running on port: ${PORT}`);
-// });
-// console.log('Database connection successful');
+
+const db = mongoose.connection;
+db.on('connected', () => console.log('connected'));
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));

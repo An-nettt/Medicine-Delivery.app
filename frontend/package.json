@@ -1,8 +1,8 @@
 {
   "name": "frontend",
+  "private": "false",
   "homepage": "https://An-nettt.github.io/Medicine-Delivery.app",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "axios": "^1.6.7",
@@ -10,6 +10,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.0",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1"
   },
   "scripts": {
@@ -38,5 +39,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://localhost:3001"
+  "proxy": "http://127.0.0.1:3000/",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
 }
